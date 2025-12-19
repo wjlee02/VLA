@@ -110,6 +110,6 @@ python scripts/compute_norm_stats.py \
 
 
 ##### 참고자료
-- [Click here to try](https://github.com/huggingface/lerobot)
-- [Click here to try](https://github.com/open-gigaai/giga-brain-0)
+- Lerobot      [Click here to try](https://github.com/huggingface/lerobot)
+- Giga-Brain-0 [Click here to try](https://github.com/open-gigaai/giga-brain-0)
 
