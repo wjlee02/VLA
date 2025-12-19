@@ -106,3 +106,10 @@ python scripts/compute_norm_stats.py \
 #### 5. VLA 학습
 
 
+
+
+
+##### 참고자료
+- [Click here to try](https://github.com/huggingface/lerobot)
+- [Click here to try](https://github.com/open-gigaai/giga-brain-0)
+
