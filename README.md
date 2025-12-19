@@ -16,12 +16,13 @@
 
 ```
 
-'''
+##### 변환 명령어
+```
 python scripts/convert_from_hdf5.py \
   --data-path dataset/after   \
   --out-dir lerobot_dataset2 \
   --task "put the plastic mailer into the box with the shipping label facing up" 
-'''
+```
 
 ##### lerobot_dataset 예시
 
