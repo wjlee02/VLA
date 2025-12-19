@@ -2,14 +2,6 @@
 
 #### 1. HDF5 -> Lerobot Dataset(v2.1)
 
-##### 변환 명령어
-```
-python scripts/convert_from_hdf5.py \
-  --data-path ??? \
-  --out-dir ??? \
-  --task "???" 
-```
-
 ##### episode_*.hdf5 예시
 ```text
 ├── observations/
@@ -23,6 +15,14 @@ python scripts/convert_from_hdf5.py \
 └── qaction/
     ├── robot_1             (T, 7) float32
     └── robot_2             (T, 7) float32
+```
+
+##### 변환 명령어
+```
+python scripts/convert_from_hdf5.py \
+  --data-path ??? \
+  --out-dir ??? \
+  --task "???" 
 ```
 
 
