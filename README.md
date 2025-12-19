@@ -1,6 +1,15 @@
 ### 양팔 VLA 학습을 위한 Lerobot 데이터셋 만들기
 
 #### 1. HDF5 -> Lerobot Dataset(v2.1)
+
+##### 변환 명령어
+```
+python scripts/convert_from_hdf5.py \
+  --data-path ??? \
+  --out-dir ??? \
+  --task "???" 
+```
+
 ##### episode_*.hdf5 예시
 ```text
 ├── observations/
@@ -14,18 +23,13 @@
 └── qaction/
     ├── robot_1             (T, 7) float32
     └── robot_2             (T, 7) float32
-
 ```
 
-##### 변환 명령어
-```
-python scripts/convert_from_hdf5.py \
-  --data-path ??? \
-  --out-dir ??? \
-  --task "???" 
-```
+
 
 #### 2. Lerobot Dataset(v2.1) + norm stats 추가
+
+##### 추가 명령어
 ```
 python scripts/compute_norm_stats.py \
   --data-paths lerobot_dataset \
@@ -65,6 +69,8 @@ python scripts/compute_norm_stats.py \
             └── ....
 ```
 
+
+
 #### 3. Lerobot Dataset(v2.1) -> Lerobot Dataset(v3.0)
 
 ##### Lerobot Dataset(v3.0) 예시
@@ -91,7 +97,12 @@ python scripts/compute_norm_stats.py \
             └── file-000.mp4
 ```
 
+
+
 #### 4. Lerobot Dataset(v3.0) + image stats 추가
 
 
+
 #### 5. VLA 학습
+
+
