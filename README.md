@@ -20,15 +20,41 @@
 ##### 변환 명령어
 ```
 python scripts/convert_from_hdf5.py \
-  --data-path after \
+  --data-path ??? \
   --out-dir ??? \
-  --task "설명" 
+  --task "???" 
 ```
 
 #### 2. Lerobot Dataset(v2.1) + norm stats 추가
 
 ##### Lerobot Dataset(v2.1) 예시
-
+```
+├── data
+│   └── chunk-000
+│       ├── episode_000000.parquet
+│       ├── episode_000001.parquet
+│       └── ....
+├── meta
+│   ├── episodes_stats.jsonl
+│   ├── episodes.jsonl
+│   ├── info.json
+│   ├── stats.json
+│   └── tasks.jsonl
+└── videos
+    └── chunk-000
+        ├── observation.images.cam_high
+        │   ├── episode_000000.mp4
+        │   ├── episode_000001.mp4
+        │   └── ....
+        ├── observation.images.cam_left_wrist
+        │   ├── episode_000000.mp4
+        │   ├── episode_000001.mp4
+        │   └── ....
+        └── observation.images.cam_right_wrist
+            ├── episode_000000.mp4
+            ├── episode_000001.mp4
+            └── ....
+```
 
 #### 3. Lerobot Dataset(v2.1) -> Lerobot Dataset(v3.0)
 
