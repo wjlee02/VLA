@@ -1,4 +1,5 @@
-# VLA
+# VLA 학습을 위한 Lerobot 데이터셋 만들기
+
 #### 1. HDF5 -> Lerobot Dataset(v2.1)
 ##### episode_*.hdf5 예시
 ```text
@@ -19,13 +20,19 @@
 ##### 변환 명령어
 ```
 python scripts/convert_from_hdf5.py \
-  --data-path dataset/after   \
-  --out-dir lerobot_dataset2 \
-  --task "put the plastic mailer into the box with the shipping label facing up" 
+  --data-path after \
+  --out-dir ??? \
+  --task "설명" 
 ```
 
-##### lerobot_dataset 예시
+#### 2. Lerobot Dataset(v2.1) + norm stats 추가
 
+##### Lerobot Dataset(v2.1) 예시
+
+
+#### 3. Lerobot Dataset(v2.1) -> Lerobot Dataset(v3.0)
+
+##### Lerobot Dataset(v3.0) 예시
 ```text
 ├── data
 │   └── chunk-000
@@ -48,13 +55,6 @@ python scripts/convert_from_hdf5.py \
         └── chunk-000
             └── file-000.mp4
 ```
-
-
-#### 2. Lerobot Dataset(v2.1) + norm stats 추가
-
-
-#### 3. Lerobot Dataset(v2.1) -> Lerobot Dataset(v3.0)
-
 
 #### 4. Lerobot Dataset(v3.0) + image stats 추가
 
