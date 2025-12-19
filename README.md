@@ -26,6 +26,15 @@ python scripts/convert_from_hdf5.py \
 ```
 
 #### 2. Lerobot Dataset(v2.1) + norm stats 추가
+```
+python scripts/compute_norm_stats.py \
+  --data-paths lerobot_dataset \
+  --output-path lerobot_dataset/meta/norm_stats.json \
+  --embodiment-id 0 \
+  --delta-mask True True True True True True False True True True True True True False \
+  --action-chunk 50 \
+  --action-dim 14
+```
 
 ##### Lerobot Dataset(v2.1) 예시
 ```
