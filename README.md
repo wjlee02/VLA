@@ -34,7 +34,7 @@ python scripts/convert_from_hdf5.py \
 python scripts/compute_norm_stats.py \
   --data-paths lerobot_dataset \
   --output-path lerobot_dataset/meta/norm_stats.json \
-  --embodiment-id 0 \
+  --embodiment-id 0 \ # 0 -> dual piper / 1 -> agibot / 추가 가능
   --delta-mask True True True True True True False True True True True True True False \
   --action-chunk 50 \
   --action-dim 14
