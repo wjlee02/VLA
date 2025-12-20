@@ -34,11 +34,13 @@ python scripts/convert_from_hdf5.py \
 python scripts/compute_norm_stats.py \
   --data-paths lerobot_dataset \
   --output-path lerobot_dataset/meta/norm_stats.json \
-  --embodiment-id 0 \ # 0 -> dual piper / 1 -> agibot / 추가 가능
+  --embodiment-id 0 \ 
   --delta-mask True True True True True True False True True True True True True False \
   --action-chunk 50 \
   --action-dim 14
 ```
+- embodiment-id : 0 -> dual piper / 1 -> agibot / 추가 가능 (이건 제가 안짜서 사실 잘 모르겠어유)
+- delta-mask : True or False
 
 ##### Lerobot Dataset(v2.1) 예시
 ```
